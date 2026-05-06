@@ -1,0 +1,21 @@
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+
+    
+    
+    
+    const div = document.createElement('h1')
+    console.log(div);
+    div.className = 'main'
+    div.id = Math.round(Math.random() * 10 + 1)
+    console.log(div.id);
+    div.setAttribute('title', 'new title')
+    div.style.color = `rgb(${r}, ${g}, ${b})`;
+    const bgColor = getRandomColor();
+    div.style.backgroundColor = bgColor;
+    div.style.borderRadius = '10px'
+    const addText = document.createTextNode('Code')
+    div.appendChild(addText)
+    document.body.appendChild(div)
