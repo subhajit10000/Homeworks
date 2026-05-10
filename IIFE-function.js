@@ -6,7 +6,6 @@
 
 
 
-
 ((connNum) => {
     console.log(`${connNum} connection to the DB `);
 })("2nd");
